@@ -1,1 +1,162 @@
-# activestore
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Store - Tu tienda online preferida</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        /* Custom styles for the map iframe */
+        #minimap-frame {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 0.75rem; /* Rounded corners */
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 lg:px-20 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo and Site Title -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="image.png" alt="Active Store Logo" class="h-16 w-auto rounded-lg mr-4">
+                <h1 class="text-3xl font-bold text-gray-900">Active Store</h1>
+            </div>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Inicio</a></li>
+                    <li><a href="#why-us" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">¿Por qué elegirnos?</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Servicios</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16 px-6 md:px-10 lg:px-20 text-center rounded-b-lg shadow-lg">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                ¡Las mejores cuentas de streaming al mejor precio!
+            </h2>
+            <p class="text-xl md:text-2xl mb-8">
+                Disfruta de tu contenido favorito sin interrupciones.
+            </p>
+            <a href="#services" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Ver Servicios
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-16 px-6 md:px-10 lg:px-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-8 text-gray-900">¿Por qué elegir Active Store?</h3>
+            <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+                En Active Store, tu satisfacción y seguridad son nuestra prioridad. Nos esforzamos por ofrecerte una experiencia de compra inigualable, respaldada por un compromiso total con la calidad y la confianza.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-blue-600 text-5xl mb-4">
+                        <!-- Icon for Security - Lock -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-2 4h4m6-10V7a4 4 0 00-4-4H8a4 4 0 00-4 4v3m0 6h16a2 2 0 002-2v-4a2 2 0 00-2-2H4a2 2 0 00-2 2v4a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Cuentas 100% Garantizadas</h4>
+                    <p class="text-gray-700">Ofrecemos cuentas legítimas y funcionales, asegurando tu acceso continuo a tus servicios favoritos.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-green-500 text-5xl mb-4">
+                        <!-- Icon for Support - Headset -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Soporte al Cliente Excepcional</h4>
+                    <p class="text-gray-700">Nuestro equipo está siempre disponible para resolver tus dudas y asistirte en lo que necesites.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-purple-600 text-5xl mb-4">
+                        <!-- Icon for Value - Dollar/Coin -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1L21 12l-4.408 3.592c-.511.598-1.48.908-2.592.908-2.762 0-5-2.239-5-5s2.238-5 5-5z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Precios Insuperables</h4>
+                    <p class="text-gray-700">Obtén acceso a tus plataformas favoritas a precios competitivos que se ajustan a tu bolsillo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-6 md:px-10 lg:px-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-900">Nuestros Servicios de Streaming</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Netflix -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/lang-es-280px-Netflix_2015_logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/E50914/FFFFFF?text=Netflix';" alt="Netflix Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Netflix</h4>
+                    <p class="text-gray-700">Accede a miles de películas y series originales. ¡Disfruta del entretenimiento sin límites!</p>
+                </div>
+                <!-- Service Card 2: Disney+ -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/lang-es-280px-Disney%2B_logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/113CCF/FFFFFF?text=Disney+';" alt="Disney+ Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Disney+</h4>
+                    <p class="text-gray-700">Todo el universo Disney, Pixar, Marvel, Star Wars y National Geographic en un solo lugar.</p>
+                </div>
+                <!-- Service Card 3: HBO Max -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/HBO_Max_Logo.svg/lang-es-280px-HBO_Max_Logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/6A0DAD/FFFFFF?text=HBO+Max';" alt="HBO Max Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">HBO Max</h4>
+                    <p class="text-gray-700">Las mejores películas, series y producciones originales de HBO.</p>
+                </div>
+                <!-- Service Card 4: Amazon Prime Video -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Prime_Video.svg/lang-es-280px-Prime_Video.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/00A8E1/FFFFFF?text=Prime+Video';" alt="Amazon Prime Video Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Amazon Prime Video</h4>
+                    <p class="text-gray-700">Películas, series y beneficios de Prime en un solo paquete.</p>
+                </div>
+                <!-- Service Card 5: YouTube Premium -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/lang-es-280px-YouTube_Premium_logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/FF0000/FFFFFF?text=YouTube+Premium';" alt="YouTube Premium Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">YouTube Premium</h4>
+                    <p class="text-gray-700">Disfruta de YouTube sin anuncios, con descargas y reproducción en segundo plano.</p>
+                </div>
+                <!-- Service Card 6: Spotify Premium -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/lang-es-280px-Spotify_logo_without_text.png" onerror="this.onerror=null;this.src='https://placehold.co/300x180/1DB954/FFFFFF?text=Spotify+Premium';" alt="Spotify Premium Logo" class="w-full h-auto rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-gray-900">Spotify Premium</h4>
+                    <p class="text-gray-700">Millones de canciones sin anuncios, descargas y saltos ilimitados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section id="contact" class="bg-blue-700 text-white py-16 px-6 md:px-10 lg:px-20 text-center rounded-t-lg shadow-lg">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-6">¡Contáctanos por WhatsApp!</h3>
+            <p class="text-xl mb-8">
+                ¿Tienes preguntas o quieres adquirir una cuenta? ¡Estamos listos para ayudarte!
+            </p>
+            <!-- Replace 'YOUR_PHONE_NUMBER' with your actual WhatsApp number -->
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center mx-auto max-w-xs">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.911C.11 5.787 5.736.054 12.271.054s12.169 5.633 12.169 12.17c0 3.541-1.54 6.706-4 9.173L24 24l-6.104-1.603c-2.337 1.458-5.078 2.2-7.942 2.2-6.536 0-12.171-5.736-12.17-12.271-.001-2.911 1.086-5.698 2.956-7.862zm1.745-7.79c-.588 1.157-.96 2.476-.959 3.844l-.001.002.001.002.001.002.001.002c.001.001.001.001.001.001l.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001.001
